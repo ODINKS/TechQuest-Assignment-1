@@ -21,10 +21,13 @@ if (fruit === "apple") {
 }
 
 //4. Write a program that iterates over an array of numbers and prints "Even" if the number is even, and "Odd" if the number is odd.
+//create an empty array.
 const numArr = [];
+//Using the for loop fill the array with numbers from 1-1000
 for (let i = 1; i <= 1000; i++) {
     numArr.push(i);
 }
+//Use the forEach, loop through the array and create required conditions.
 numArr.forEach((num) => {
     if (num % 2 === 0) {
         console.log("Even");
@@ -267,8 +270,9 @@ const dataBase = [
     }
 ]
 
-
+//Extract all the names into a nameArr array using the array method, map().
 const nameArr = dataBase.map((num) => num.name);
+//Extract all the street into a streetArr array using the array method, map().
 const streetArr = dataBase.map((num) => num.address.street);
 
 console.log(nameArr);
